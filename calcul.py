@@ -1,0 +1,28 @@
+a=int(input("A:"))
+b=int(input("B:"))
+calculator=input("add/sub/multi/div:")
+if(calculator=="add"):
+    print(a+b)
+elif(calculator=="sub"):
+    print(a-b)
+elif(calculator=="multi"):
+    print(a*b)
+elif(calculator=="div"):
+    print(a/b)
+else:
+    print("invalid")
+
+a=int(input("A:"))
+b=int(input("B:"))
+c=("invalid")
+calculator=input("add/sub/multi/div:")
+if(calculator=="add"):
+    print(a+b)
+elif(calculator=="sub"):
+    print(a-b)
+elif(calculator=="multi"):
+    print(a*b)
+elif(calculator=="div"):
+    print(a/b)
+else:
+    print(c)
