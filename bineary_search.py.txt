@@ -1,0 +1,21 @@
+def bineary_search(arr, tag):
+    low = 0
+    high = len(arr) - 1
+    while low < high:
+        mid = (low+high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] > target:
+            high = mid - 1
+        else:
+            low = mid + 1
+    return -1
+    
+array = [66, 3, 5, 4, 88, 42, 26, 12]
+
+array.sort()
+print(array)
+target = 66
+bineary = bineary_search(array, target)
+
+print(f'the index is {bineary}')

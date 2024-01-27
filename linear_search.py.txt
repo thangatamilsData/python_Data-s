@@ -1,0 +1,14 @@
+def linear_search(arr, target):
+    n = len(arr)
+    
+    for i in range(n):
+        if arr[i] == target:
+            return i
+            
+array = [2, 6, 1, 5, 4, 88]
+
+target = 6
+
+linear = linear_search(array, target)
+
+print("the index is",linear)
