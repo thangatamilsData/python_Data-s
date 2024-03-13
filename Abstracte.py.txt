@@ -1,0 +1,26 @@
+#Abstraction
+from abc import ABC, abstractmethod
+
+class first(ABC):
+    def fix(self):
+        pass
+    
+    def __init__(self, a, b):
+        self._name = a #protected
+        self.age = b
+        
+class second(first):
+    def fix(self):
+        print("Hello this abstraction from python :) !")
+        
+class third(second):
+    def __init__(self, a, b, x):
+        super().__init__(a, b) #super().__init__() 
+        self.work = x
+        
+    def fix(self):
+        return (self.age, self._name, self.work)
+    
+
+t = third("TAMIL", 22, "IT")
+print(t.fix())

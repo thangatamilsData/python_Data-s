@@ -1,0 +1,19 @@
+a = "Tamil"
+class main():
+    def __init__(self, N, A):
+        self.__name = N #private
+        self.age = A
+
+    def first(self):
+        return self.__name, self.age
+    
+    def display(self):
+        print("Hello Python :) I am ", self.__name)
+
+class drive(main): # inheritence
+    def display(self): #overriding and python doesn't have method overloading but we can acheive by give argument as none and set the into (is not none)
+        print(f"Hello Python ! this is", self.age , {a})
+
+d = drive("Thangatamil", 22)
+
+d.display()

@@ -1,11 +1,8 @@
-#GCD (greatest common divisor) find highest divisor of two numbers
-
-a = int(input("Enter the number :"))
-b = int(input("Enter the number :"))
-def gcd(a, b):
-    while b:
-        a, b = b, a%b
-    return a
-
-newgcd = gcd(a, b)
-print(newgcd)
+while(True):
+    def GCD(a, b):
+        while(b):
+            a, b = b, a%b
+        return a
+    a = int(input("Enter the value :"))
+    b = int(input("Enter the value :"))
+    print(GCD(a, b))
